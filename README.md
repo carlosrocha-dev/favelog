@@ -1,4 +1,5 @@
-# Favela Log
+# Favela Log (v.0.0.1)
+![favelog-color](https://user-images.githubusercontent.com/3737837/201503890-d747e18e-3b96-47b4-aa69-9828ab07ac3f.png)
 
 ---
 
