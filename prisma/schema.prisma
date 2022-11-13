@@ -10,3 +10,39 @@ datasource db {
   provider = "sqlite"
   url      = env("DATABASE_URL")
 }
+
+model Retail {
+  retail_id       Int     @id @default(autoincrement())
+  name            String
+  email           String  @unique
+  cpf             Int     @unique
+  tel             Int
+  pix             String
+  pickup_address  String
+  deliveries      Delivery[]
+}
+
+model Courier {
+  courier_id    Int     @id @default(autoincrement())
+  name          String
+  email         String  @unique
+  cpf           Int  @unique
+  tel           Int
+  pix           String
+  vehicle_plate String
+  vehicle_model String
+  deliveries    Delivery[]
+}
+
+model Delivery {
+  delivery_id       Int     @id @default(autoincrement())
+  request_retail    Retail  @relation(fields: [retail_id], references: [retail_id])
+  retail_id         Int
+  called_courier    Courier @relation(fields: [courier_id], references: [courier_id])
+  courier_id        Int
+  pickup_address    String
+  delivery_address  String
+  value_tax         Int
+  delivery_status   Int
+  payment_status    Int
+}

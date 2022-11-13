@@ -13,7 +13,7 @@
 
 | Rotas | Método | Descrição | Dados transmitidos | OBS |
 | --- | --- | --- | --- | --- |
-| /createStore | POST | Criar o usuário do comerciante | Dados do comerciante | - |
+| /createRetail | POST | Criar o usuário do comerciante | Dados do comerciante | - |
 | /createCourier | POST | Criar usuário do entregador | Dados do entregador | - |
 | /createPayment | POST | Adicionar dados de pagamento do com | Usuário e dados do cartao | Se der tempo |
 | /deletePayment | DELETE | Apagar dados de pagamento | Usuário e ID do meio de pagamento | Se der tempo |

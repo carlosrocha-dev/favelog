@@ -49,7 +49,5 @@
 | pickup_address | varchar | - |
 | delivery_address | varchar | - |
 | value_tax | number | - |
-| retail_pix | varchar | - |
-| courier_pix | varchar | - |
 | delivery_status | number | - |
 | payment_status | number | - |
