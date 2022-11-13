@@ -35,4 +35,4 @@ yarn-error.log*
 next-env.d.ts
 
 # databases
-*.sqlite*
+*.sqlite*package-lock.json
