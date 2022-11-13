@@ -11,11 +11,11 @@ type DataReceived = {
 
 async function searchCourier(pickupAddress:string, deliveryAddress:string) {
   const listCouriers = await prisma.courier.findMany()
-  let couriersId = []
+  let couriersId:number[]
+  couriersId = []
   listCouriers.forEach(element => {
     couriersId.push(element.courier_id)
   });
-
   let couriersLen = couriersId.length
   return couriersId[Math.floor(Math.random() * couriersLen)]
 }
