@@ -12,7 +12,7 @@ type DataReceived = {
   vehicleModel: string,
 }
 
-export default async function createRetail(
+export default async function createCourier(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
