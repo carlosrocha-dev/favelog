@@ -35,20 +35,20 @@ export default function CreateCourier() {
                     <form className={styles.queryForm} id="retailForm" onSubmit={handleRetailSubmit}>
                         <h1>Cadastro</h1>
                         <h2>Entregador</h2>
-                        <label htmlFor="name">Nome Completo</label>
-                        <input type="text" name="name" id="name" required/>
-                        <label htmlFor="email">E-mail</label>
-                        <input type="email" name="" id="email" required/>
-                        <label htmlFor="tel">Telefone</label>
-                        <input type="tel" name="tel" id="tel" required/>
-                        <label htmlFor="pix">PIX</label>
-                        <input type="text" name="pix" id="pix" required/>
-                        <label htmlFor="cpf">CPF</label>
-                        <input type="number" name="cpf" id="cpf" required/>
-                        <label htmlFor="vehiclePlate">Placa do Veículo</label>
-                        <input type="text" name="vehiclePlate" id="vehiclePlate" />
-                        <label htmlFor="vehicleModel">Modelo do Veículo</label>
-                        <input type="text" name="vehicleModel" id="vehicleModel" />
+                        <label className={styles.faveInput} htmlFor="name">Nome Completo</label>
+                        <input className={styles.faveInput} type="text" name="name" id="name" required/>
+                        <label className={styles.faveInput} htmlFor="email">E-mail</label>
+                        <input className={styles.faveInput} type="email" name="" id="email" required/>
+                        <label className={styles.faveInput} htmlFor="tel">Telefone</label>
+                        <input className={styles.faveInput} type="tel" name="tel" id="tel" required/>
+                        <label className={styles.faveInput} htmlFor="pix">PIX</label>
+                        <input className={styles.faveInput} type="text" name="pix" id="pix" required/>
+                        <label className={styles.faveInput} htmlFor="cpf">CPF</label>
+                        <input className={styles.faveInput} type="number" name="cpf" id="cpf" required/>
+                        <label className={styles.faveInput} htmlFor="vehiclePlate">Placa do Veículo</label>
+                        <input className={styles.faveInput} type="text" name="vehiclePlate" id="vehiclePlate" />
+                        <label className={styles.faveInput} htmlFor="vehicleModel">Modelo do Veículo</label>
+                        <input className={styles.faveInput} type="text" name="vehicleModel" id="vehicleModel" />
                         <button className={styles.faveButton} type="submit">CADASTRAR</button>
                     </form>
                 </div>
