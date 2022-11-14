@@ -8,7 +8,6 @@ export default function Home() {
       <Head>
         <title>Favelog</title>
         <meta name="description" content="Aplicativo para Integração entre os microempreendedores da favela e moto-taxis, para serviços de entrega e variados" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
