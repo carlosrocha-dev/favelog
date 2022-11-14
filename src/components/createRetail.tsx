@@ -46,7 +46,7 @@ export default function CreateRetail() {
                         <input type="text" name="pickup_address" id="pickup_address" required/>
                         <label htmlFor="cpf">CPF</label>
                         <input type="number" name="cpf" id="cpf" required/>
-                        <button type="submit">CADASTRAR</button>
+                        <button className={styles.faveButton} type="submit">CADASTRAR</button>
                     </form>
                 </div>
             ) : (
