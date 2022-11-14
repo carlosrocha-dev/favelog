@@ -1,0 +1,10 @@
+.content {
+    display: flex;
+    background: #000099;
+    flex-direction: column;
+}
+
+.queryForm {
+    display: flex;
+    flex-direction: column;
+}
