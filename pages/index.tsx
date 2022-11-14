@@ -16,14 +16,17 @@ export default function Home() {
       <main className={styles.main}>
       <h1 className={styles.title}>
           <Image
-             src="img/logo.png"
+             src="/../public/img/logo.png"
              alt="favelog"
              layout="responsive"
+             width="300"
+             height="200"
           />
         </h1>
         <div className="backgorund"></div>
         <CreateRetail/>
         <CreateCourier/>
+        <CreateDelivery/>
       </main>
 
       <footer className={styles.footer}>

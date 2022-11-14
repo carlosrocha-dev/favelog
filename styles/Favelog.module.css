@@ -8,15 +8,15 @@
     display: flex;
     flex-direction: column;
 }
-h1,h2 {
+.container h1, .container h2 {
     padding: 2rem;
     color: 163144;
 }
-h1 {
+.container h1 {
     font-size: 3.5rem;
     font-weight: bolder;
 }
-h2 {
+.container h2 {
     font-size: 2.5rem;
     font-weight: bolder;
     padding-left: 1rem;
