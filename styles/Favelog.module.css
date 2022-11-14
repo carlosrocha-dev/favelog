@@ -1,11 +1,11 @@
 .content {
-    display: flex; 
+    display: flex;
     flex-direction: column;
 }
 
 .queryForm {
-    /* display: flex; */
-    /* flex-direction: column; */
+    display: flex;
+    flex-direction: column;
 }
 .formSignIn {
     margin: 1rem;
@@ -13,8 +13,27 @@
     text-align: left;
     color: #fff;
     text-decoration: none;
-    /* border: 1px solid #eaeaea; */
-    /* border-radius: 10px; */
     transition: color 0.15s ease, border-color 0.15s ease;
     max-width: 600px;
   }
+  .faveButton {
+	background:linear-gradient(to bottom, #163144 5%, #163144 100%);
+	background-color:#163144;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+}
+.faveButton:hover {
+	background:linear-gradient(to bottom, #163144 5%, #163144 100%);
+	background-color:#163144;
+}
+.faveButton:active {
+	position:relative;
+	top:1px;
+}
