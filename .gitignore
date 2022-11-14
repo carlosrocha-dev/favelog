@@ -38,4 +38,5 @@ next-env.d.ts
 *.sqlite*package-lock.json
 
 # folder
-# /assets
+/assets
+/design
