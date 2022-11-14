@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Favelog - conectando a comunidade</title>
+        <title>Favelog - conectando o micro empreendedor da favela com a comunidade</title>
         <meta name="description" content="Aplicativo para Integração entre os microempreendedores da favela e moto-taxis, para serviços de entrega e variados" />
       </Head>
 
@@ -24,9 +24,7 @@ export default function Home() {
           />
         </h1>
         <div className="backgorund"></div>
-        <CreateRetail/>
-        <CreateCourier/>
-        <CreateDelivery/>
+        <Login />
       </main>
 
       <footer className={styles.footer}>
