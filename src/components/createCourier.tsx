@@ -2,7 +2,7 @@ import { useState } from "react";
 import styles from "../../styles/Favelog.module.css"
 
 export default function CreateCourier() {
-    
+
     const [isFormVisible, setIsFormVisible] = useState(true)
 
     const handleRetailSubmit = async (event:any) => {
@@ -31,25 +31,27 @@ export default function CreateCourier() {
     return (
         <div className={styles.content}>
             {isFormVisible ? (
-                <form className={styles.queryForm} id="retailForm" onSubmit={handleRetailSubmit}>
-                    <h1>Cadastro</h1>
-                    <h2>Entregador</h2>
-                    <label htmlFor="name">Nome Completo</label>
-                    <input type="text" name="name" id="name" required/>
-                    <label htmlFor="email">E-mail</label>
-                    <input type="email" name="" id="email" required/>
-                    <label htmlFor="tel">Telefone</label>
-                    <input type="tel" name="tel" id="tel" required/>
-                    <label htmlFor="pix">PIX</label>
-                    <input type="text" name="pix" id="pix" required/>
-                    <label htmlFor="cpf">CPF</label>
-                    <input type="number" name="cpf" id="cpf" required/>
-                    <label htmlFor="vehiclePlate">Placa do Veículo</label>
-                    <input type="text" name="vehiclePlate" id="vehiclePlate" />
-                    <label htmlFor="vehicleModel">Modelo do Veículo</label>
-                    <input type="text" name="vehicleModel" id="vehicleModel" />
-                    <button type="submit">CADASTRAR</button>
-                </form>
+                <div className={styles.formSignIn}>
+                    <form className={styles.queryForm} id="retailForm" onSubmit={handleRetailSubmit}>
+                        <h1>Cadastro</h1>
+                        <h2>Entregador</h2>
+                        <label htmlFor="name">Nome Completo</label>
+                        <input type="text" name="name" id="name" required/>
+                        <label htmlFor="email">E-mail</label>
+                        <input type="email" name="" id="email" required/>
+                        <label htmlFor="tel">Telefone</label>
+                        <input type="tel" name="tel" id="tel" required/>
+                        <label htmlFor="pix">PIX</label>
+                        <input type="text" name="pix" id="pix" required/>
+                        <label htmlFor="cpf">CPF</label>
+                        <input type="number" name="cpf" id="cpf" required/>
+                        <label htmlFor="vehiclePlate">Placa do Veículo</label>
+                        <input type="text" name="vehiclePlate" id="vehiclePlate" />
+                        <label htmlFor="vehicleModel">Modelo do Veículo</label>
+                        <input type="text" name="vehicleModel" id="vehicleModel" />
+                        <button className={styles.faveButton} type="submit">CADASTRAR</button>
+                    </form>
+                </div>
             ) : (
                 <div>
                     <h1>CADASTRADO COM SUCESSO!</h1>
