@@ -6,6 +6,7 @@ import styles1 from '../styles/Favelog.module.css'
 import { useState } from 'react'
 import CreateRetail from '../src/components/createRetail'
 import CreateCourier from '../src/components/createCourier'
+import { CreateType } from '../src/components/createType'
 
 export default function Home() {
 
@@ -49,12 +50,11 @@ export default function Home() {
         }
         {
             !isSubsButton ? (<>
-              <CreateRetail/>
-              <CreateCourier/>
+              <CreateType/>
+              {/* <CreateRetail/> */}
+              {/* <CreateCourier/> */}
             </>):(<></>)
         }
-
-        {/* <Login /> */}
       </main>
 
       <footer className={styles.footer}>

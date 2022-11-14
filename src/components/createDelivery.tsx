@@ -1,5 +1,4 @@
 import { useState } from "react";
-import prisma from "../../pages/api/clientPrisma";
 import styles from "../../styles/Favelog.module.css"
 
 export default function CreateDelivery() {
@@ -50,7 +49,7 @@ export default function CreateDelivery() {
                     <input type="text" name="pickup_address" id="pickup_address" required/>
                     <label htmlFor="delivery_address">Endereço de Entrega</label>
                     <input type="text" name="delivery_address" id="delivery_address" required/>
-                    <button type="submit">CHAMAR</button>
+                    <button type="submit" className={styles.faveButton}>CHAMAR</button>
                 </form>
             ) : (
                 <>

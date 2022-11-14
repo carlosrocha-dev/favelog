@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "../../styles/Favelog.module.css"
+import CreateDelivery from "./createDelivery";
 
 export default function CreateRetail() {
 
@@ -50,9 +51,7 @@ export default function CreateRetail() {
                     </form>
                 </div>
             ) : (
-                <div>
-                    <h1>CADASTRADO COM SUCESSO!</h1>
-                </div>
+                <CreateDelivery/>
             )}
         </div>
     )
