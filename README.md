@@ -4,8 +4,7 @@
 ---
 
 ## Sobre o projeto:
-
-https://studio.youtube.com/video/sXcyLjN23b0/edit
+(https://www.youtube.com/watch?v=sXcyLjN23b0&ab_channel=CarlosRocha)
 
  - App que cria uma rede logística entre o micro empreendedor da favela e seus clientes por meio de entregadores com motocicletas.
 
