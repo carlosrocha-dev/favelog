@@ -34,18 +34,18 @@ export default function CreateRetail() {
                     <form className={styles.queryForm} id="retailForm" onSubmit={handleRetailSubmit}>
                         <h1>Cadastro</h1>
                         <h2>Empreendedor</h2>
-                        <label className={styles.faveImputs} htmlFor="name">Nome Completo</label>
-                        <input className={styles.faveImputs} type="text" name="name" id="name" required/>
-                        <label className={styles.faveImputs} htmlFor="email">E-mail</label>
+                        <label className={styles.faveImput} htmlFor="name">Nome Completo</label>
+                        <input className={styles.faveImput} type="text" name="name" id="name" required/>
+                        <label className={styles.faveImput} htmlFor="email">E-mail</label>
                         <input className={styles.faveImputs} type="email" name="" id="email" required/>
-                        <label className={styles.faveImputs} htmlFor="tel">Telefone</label>
-                        <input className={styles.faveImputs} type="tel" name="tel" id="tel" required/>
-                        <label className={styles.faveImputs} htmlFor="pix">PIX</label>
-                        <input className={styles.faveImputs} type="text" name="pix" id="pix" required/>
-                        <label className={styles.faveImputs} htmlFor="pickup_address">Endereço</label>
-                        <input className={styles.faveImputs} type="text" name="pickup_address" id="pickup_address" required/>
-                        <label className={styles.faveImputs} htmlFor="cpf">CPF</label>
-                        <input className={styles.faveImputs} type="number" name="cpf" id="cpf" required/>
+                        <label className={styles.faveImput} htmlFor="tel">Telefone</label>
+                        <input className={styles.faveImput} type="tel" name="tel" id="tel" required/>
+                        <label className={styles.faveImput} htmlFor="pix">PIX</label>
+                        <input className={styles.faveImput} type="text" name="pix" id="pix" required/>
+                        <label className={styles.faveImput} htmlFor="pickup_address">Endereço</label>
+                        <input className={styles.faveImput} type="text" name="pickup_address" id="pickup_address" required/>
+                        <label className={styles.faveImput} htmlFor="cpf">CPF</label>
+                        <input className={styles.faveImput} type="number" name="cpf" id="cpf" required/>
                         <br /><br /><button className={styles.faveButton} type="submit">CADASTRAR</button>
                     </form>
                 </div>
