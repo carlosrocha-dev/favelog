@@ -15,6 +15,8 @@ export default function Home() {
          Favelog
         </h1>
         <div className="backgorund"></div>
+        <input required />
+        <button>Cadastrar</button>
         <p className={styles.description}>
         Aplicativo para Integração entre os microempreendedores da favela e moto-taxis, para serviços de entrega e variados.
         </p>
