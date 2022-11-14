@@ -19,8 +19,6 @@ export default function Signin() {
           />
         </h1>
         <div className="backgorund"></div>
-        <CreateRetail/>
-        <CreateCourier/>
       </main>
 
       <footer className={styles.footer}>

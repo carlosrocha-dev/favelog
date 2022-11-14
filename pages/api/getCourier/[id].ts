@@ -5,10 +5,13 @@ export default async function GetCourier(
     req: NextApiRequest,
     res: NextApiResponse
 ) {
-    const {id} = req.query
+    let {id} = req.query
+    if (typeof(id) == undefined || typeof(id) == null) {
+        id = "1"
+    }
     const getCourier = await prisma.courier.findUnique({
         where: {
-            courier_id: parseInt(id)
+            courier_id: parseInt(id as string)
         }
     })
     if (getCourier) {
