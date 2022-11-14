@@ -1,6 +1,7 @@
 .content {
     display: flex;
     flex-direction: column;
+    max-width: 800px;
 }
 
 .queryForm {
@@ -22,13 +23,13 @@ h2 {
 }
 
 .formSignIn {
+    position: relative;
     margin: 1rem;
     padding: 1.5rem;
     text-align: left;
     color: #fff;
     text-decoration: none;
     transition: color 0.15s ease, border-color 0.15s ease;
-    max-width: 600px;
   }
   .faveButton {
     margin-top: 1.5rem;
