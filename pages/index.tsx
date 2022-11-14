@@ -22,8 +22,7 @@ export default function Home() {
           />
         </h1>
         <div className="backgorund"></div>
-        <CreateRetail/>
-        <CreateCourier/>
+        <Login />
       </main>
 
       <footer className={styles.footer}>

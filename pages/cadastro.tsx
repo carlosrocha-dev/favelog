@@ -6,12 +6,12 @@ export default function Signin() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Favelog</title>
+        <title>Favelog - conectando o micro empreendedor da favela com a comunidade</title>
         <meta name="description" content="Aplicativo para Integração entre os microempreendedores da favela e moto-taxis, para serviços de entrega e variados" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
+      <h1 className={styles.title}>
           <Image
              src="img/logo.png"
              alt="favelog"
@@ -19,9 +19,13 @@ export default function Signin() {
           />
         </h1>
         <div className="backgorund"></div>
-        <input required />
-        <button>Cadastrar</button>
+        <CreateRetail/>
+        <CreateCourier/>
       </main>
+
+      <footer className={styles.footer}>
+        TEAM 42 OMEGA - 42SP.ORG.BR | 42.RIO
+      </footer>
     </div>
   )
 }
