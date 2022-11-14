@@ -1,4 +1,4 @@
-# Favela Log (v.0.0.1)
+# Favela Log (v.0.0.1) - https://favelog.42omega.com.br/
 ![favelog-color](img/Logo.png)
 
 ---
