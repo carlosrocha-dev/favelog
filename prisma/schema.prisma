@@ -9,7 +9,7 @@ datasource db {
   // provider = "postgresql"
   // provider = "sqlite"
   provider = "mysql"
-  url      = env("DATABASE_URL")
+  url      = "mysql://favelog:ABCdef123%23@favelog.mysql.dbaas.com.br:3306/favelog"
 }
 
 model Retail {
