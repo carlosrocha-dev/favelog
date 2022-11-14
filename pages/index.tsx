@@ -3,6 +3,8 @@ import Image from 'next/image'
 import CreateCourier from '../src/components/createCourier'
 import CreateDelivery from '../src/components/createDelivery'
 import CreateRetail from '../src/components/createRetail'
+import CreateRetail from '../src/components/login'
+import CreateRetail from '../src/components/logo'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -14,13 +16,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-      <h1 className={styles.title}>
-          <Image
-             src="img/logo.png"
-             alt="favelog"
-             layout="responsive"
-          />
-        </h1>
+     <Logo />
         <div className="backgorund"></div>
         <Login />
       </main>
