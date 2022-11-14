@@ -26,6 +26,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
+        TEAM 42 OMEGA - 42SP.ORG.BR | 42.RIO
       </footer>
     </div>
   )

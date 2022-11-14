@@ -17,6 +17,7 @@
     max-width: 600px;
   }
   .faveButton {
+    margin-top: 1.5rem;
 	background:linear-gradient(to bottom, #163144 5%, #163144 100%);
 	background-color:#163144;
 	border-radius:8px;
@@ -36,4 +37,7 @@
 .faveButton:active {
 	position:relative;
 	top:1px;
+}
+.faveInput {
+    margin-top: 1.5rem;
 }
