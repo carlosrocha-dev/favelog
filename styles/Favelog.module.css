@@ -1,7 +1,6 @@
 .content {
-    /* display: flex; */
-    /* background: #000099; */
-    /* flex-direction: column; */
+    display: flex; 
+    flex-direction: column;
 }
 
 .queryForm {
