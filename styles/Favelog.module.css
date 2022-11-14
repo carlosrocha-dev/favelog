@@ -1,10 +1,57 @@
 .content {
     display: flex;
-    background: #000099;
     flex-direction: column;
 }
 
 .queryForm {
     display: flex;
     flex-direction: column;
+}
+h1,h2 {
+    padding: 2rem;
+    color: 163144;
+}
+h1 {
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+h2 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding-left: 1rem;
+}
+
+.formSignIn {
+    margin: 1rem;
+    padding: 1.5rem;
+    text-align: left;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    max-width: 600px;
+  }
+  .faveButton {
+    margin-top: 1.5rem;
+	background:linear-gradient(to bottom, #163144 5%, #163144 100%);
+	background-color:#163144;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+}
+.faveButton:hover {
+	background:linear-gradient(to bottom, #163144 5%, #163144 100%);
+	background-color:#163144;
+}
+.faveButton:active {
+	position:relative;
+	top:1px;
+}
+.faveInput {
+    margin-top: 1.5rem;
 }

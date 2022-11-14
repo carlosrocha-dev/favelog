@@ -15,6 +15,7 @@ export default function Signin() {
           <Image
              src="img/logo.png"
              alt="favelog"
+             layout="responsive"
           />
         </h1>
         <div className="backgorund"></div>
