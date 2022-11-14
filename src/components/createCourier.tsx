@@ -49,7 +49,7 @@ export default function CreateCourier() {
                         <input className={styles.faveInput} type="text" name="vehiclePlate" id="vehiclePlate" />
                         <label className={styles.faveInput} htmlFor="vehicleModel">Modelo do Veículo</label>
                         <input className={styles.faveInput} type="text" name="vehicleModel" id="vehicleModel" />
-                        <button className={styles.faveButton} type="submit">CADASTRAR</button>
+                        <br /><br /><button className={styles.faveButton} type="submit">CADASTRAR</button>
                     </form>
                 </div>
             ) : (

@@ -46,7 +46,7 @@ export default function CreateRetail() {
                         <input className={styles.faveImputs} type="text" name="pickup_address" id="pickup_address" required/>
                         <label className={styles.faveImputs} htmlFor="cpf">CPF</label>
                         <input className={styles.faveImputs} type="number" name="cpf" id="cpf" required/>
-                        <button className={styles.faveButton} type="submit">CADASTRAR</button>
+                        <br /><br /><button className={styles.faveButton} type="submit">CADASTRAR</button>
                     </form>
                 </div>
             ) : (
