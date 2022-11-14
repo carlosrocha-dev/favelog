@@ -1,12 +1,12 @@
 .content {
-    display: flex;
-    background: #000099;
-    flex-direction: column;
+    /* display: flex; */
+    /* background: #000099; */
+    /* flex-direction: column; */
 }
 
 .queryForm {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
 }
 .formSignIn {
     margin: 1rem;
