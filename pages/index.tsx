@@ -21,9 +21,6 @@ export default function Home() {
           />
         </h1>
         <div className="backgorund"></div>
-        <p className={styles.description}>
-        Aplicativo para Integração entre os microempreendedores da favela e moto-taxis, para serviços de entrega e variados.
-        </p>
         <CreateRetail/>
         <CreateCourier/>
       </main>
