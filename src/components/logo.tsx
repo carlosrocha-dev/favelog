@@ -5,7 +5,7 @@ export default function Logo() {
     return (
         <h1 className={styles.title}>
             <Image
-                src="/../public/img/logo.png"
+                src="/img/logo.png"
                 alt="favelog"
                 layout="responsive"
                 width="300"
