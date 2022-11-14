@@ -20,7 +20,7 @@ export default function Signin() {
         <div className="backgorund"></div>
         <input required />
         <button>Cadastrar</button>
-
+      </main>
     </div>
   )
 }
