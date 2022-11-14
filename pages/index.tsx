@@ -1,26 +1,13 @@
 import Head from 'next/head'
-import Login from '../src/components/login'
-import Logo from '../src/components/logo'
-import styles from '../styles/Home.module.css'
-import styles1 from '../styles/Favelog.module.css'
-import { useState } from 'react'
-import CreateRetail from '../src/components/createRetail'
+import Image from 'next/image'
 import CreateCourier from '../src/components/createCourier'
-import { CreateType } from '../src/components/createType'
+import CreateDelivery from '../src/components/createDelivery'
+import CreateRetail from '../src/components/createRetail'
+import CreateRetail from '../src/components/login'
+import CreateRetail from '../src/components/logo'
+import styles from '../styles/Home.module.css'
 
 export default function Home() {
-
-  const [isLogginButton, setIsLogginButton] = useState(true)
-  const [isSubsButton, setIsSubsButton] = useState(true)
-
-  function handleSubs() {
-    setIsSubsButton(false)
-  }
-
-  function handleLogin() {
-    setIsLogginButton(false)
-  }
-
   return (
     <div className={styles.container}>
       <Head>
@@ -29,32 +16,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-
-        <Logo />
-        {isLogginButton == true && isSubsButton == true ? (
-          <>
-            <h1>Bem vindo a sua plataforma de entrega!</h1>
-            <div className="backgorund"></div>
-    
-            <p>Cadastre-se ou faça o seu login</p>
-    
-            <button onClick={handleSubs} className={styles1.faveButton}>CADASTRAR</button>
-            <button onClick={handleLogin} className={styles1.faveButton}>FAZER LOGIN</button>
-          </>
-        ):(<></>)}
-        {
-          !isLogginButton ? (
-            <Login/>
-          ) : ( <></>)
-
-        }
-        {
-            !isSubsButton ? (<>
-              <CreateType/>
-              {/* <CreateRetail/> */}
-              {/* <CreateCourier/> */}
-            </>):(<></>)
-        }
+     <Logo>
+        <div className="backgorund"></div>
+        <Login />
       </main>
 
       <footer className={styles.footer}>
