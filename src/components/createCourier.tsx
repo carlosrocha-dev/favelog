@@ -5,7 +5,7 @@ export default function CreateCourier() {
     
     const [isFormVisible, setIsFormVisible] = useState(true)
 
-    const handleRetailSubmit = async (event:any) => {
+    const handleCourierSubmit = async (event:any) => {
         event.preventDefault();
         const data = {
             name: event.target.name.value,
@@ -17,7 +17,7 @@ export default function CreateCourier() {
             vehicleModel: event.target.vehicleModel.value
           }
           const JSONdata = JSON.stringify(data)
-          const endpoint = '/api/createRetail'
+          const endpoint = '/api/createCourier'
           const options = {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
@@ -31,7 +31,7 @@ export default function CreateCourier() {
     return (
         <div className={styles.content}>
             {isFormVisible ? (
-                <form className={styles.queryForm} id="retailForm" onSubmit={handleRetailSubmit}>
+                <form className={styles.queryForm} id="courierForm" onSubmit={handleCourierSubmit}>
                     <h1>Cadastro</h1>
                     <h2>Entregador</h2>
                     <label htmlFor="name">Nome Completo</label>
@@ -45,9 +45,9 @@ export default function CreateCourier() {
                     <label htmlFor="cpf">CPF</label>
                     <input type="number" name="cpf" id="cpf" required/>
                     <label htmlFor="vehiclePlate">Placa do Veículo</label>
-                    <input type="text" name="vehiclePlate" id="vehiclePlate" />
+                    <input type="text" name="vehiclePlate" id="vehiclePlate" required/>
                     <label htmlFor="vehicleModel">Modelo do Veículo</label>
-                    <input type="text" name="vehicleModel" id="vehicleModel" />
+                    <input type="text" name="vehicleModel" id="vehicleModel" required/>
                     <button type="submit">CADASTRAR</button>
                 </form>
             ) : (

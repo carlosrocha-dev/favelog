@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import CreateCourier from '../src/components/createCourier'
+import CreateDelivery from '../src/components/createDelivery'
 import CreateRetail from '../src/components/createRetail'
 import styles from '../styles/Home.module.css'
 
@@ -20,8 +21,9 @@ export default function Home() {
         <p className={styles.description}>
         Aplicativo para Integração entre os microempreendedores da favela e moto-taxis, para serviços de entrega e variados.
         </p>
-        <CreateRetail/>
-        <CreateCourier/>
+        {/* <CreateRetail/> */}
+        {/* <CreateCourier/> */}
+        <CreateDelivery/>
       </main>
 
       <footer className={styles.footer}>
